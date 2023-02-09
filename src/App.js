@@ -1,5 +1,6 @@
 import React from 'react';
-import {useEffect, useState} from 'react';
+//import {useEffect, useState} from 'react';
+import {useEffect} from 'react';
 
 function App() {
   GetWeather();
@@ -8,7 +9,6 @@ function App() {
 }
 
 function GetWeather() {
-  const apiKey = '3de6c9f8c2504acaa36202353230902';
   const url = 'http://api.weatherapi.com/v1/current.json?key=3de6c9f8c2504acaa36202353230902&q=Copenhagen&aqi=no';
   useEffect(() => {
     fetch(url)
