@@ -9,7 +9,7 @@ function App() {
 }
 
 function GetWeather() {
-  const url = 'http://api.weatherapi.com/v1/current.json?key=3de6c9f8c2504acaa36202353230902&q=Copenhagen&aqi=no';
+  const url = 'https://api.weatherapi.com/v1/current.json?key=3de6c9f8c2504acaa36202353230902&q=Copenhagen&aqi=no';
   useEffect(() => {
     fetch(url)
        .then((response) => response.json())
